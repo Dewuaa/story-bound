@@ -1,0 +1,83 @@
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  /* This style below will be inherited */
+  margin-top: 30px;
+  padding-bottom: 100px;
+  padding-right: 24px;
+  background-color: whitesmoke;
+
+  /*background-image: linear-gradient(to right, rgb(224, 173, 96) , rgb(250, 103, 6));*/
+}
+/*
+@keyframes bgAnimated {
+  0%{
+    background-position: 0 85%;
+  }
+  50%{
+    background-position: 100% 20%;
+  }
+  100%{
+    background-position: 0% 85%;
+  }
+}
+*/
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+.btn {
+  top: 50%;
+  left: 48%;
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  border: none;
+  padding: 16pt 16pt 8pt;
+  position: absolute;
+
+}
+
+.btn::after {
+  content: '';
+  width: 40pt;
+  height: 40pt;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 4pt);
+  z-index: 1;
+  border-width: 0 0 3pt 3pt;
+  border-style: solid;
+  border-color: white;
+  transform: rotate(-45deg);
+  animation: arrowAnimation 1s infinite;
+
+}
+
+@media screen and (min-width: 701px) {
+  .scrolldrop {
+    width: 10pt;
+    height: 10pt;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .scrolldrop {
+    width: 10pt;
+    height: 10pt;
+  }
+}
+
+@keyframes arrowAnimation {
+  0% { top: 0; }
+  100% { top: 8pt; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

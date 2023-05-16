@@ -1,0 +1,97 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: cursive;
+}
+.Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+
+  animation-name: change;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+}
+.content h1{
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 15px;
+  font-weight: 600;
+  font-style: italic;
+  filter: blur(1px);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content h1:hover {
+  filter: blur(0);
+  transition: 0;
+}
+.content h1 span{
+  background: linear-gradient(to right, #e2d9cf 0%, #d67505);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f3b0b0;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+}
+.content a{
+  background: #85c1ee;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.content a:hover{
+  background: #034e88;
+  color: #fff;
+}
+@keyframes change{
+  0%
+  {
+      background-image: url(../images/cover2.jpg);
+  }
+  20%
+  {
+      background-image: url(../images/cover4.jpg);
+  }
+  40%
+  {
+      background-image: url(../images/cover.jpg);
+  }
+  60%
+  {
+      background-image: url(../images/cover6.jpg);
+  }
+  80%
+  {
+      background-image: url(../images/cover2.jpg);
+  }
+  100%
+  {
+      background-image: url(../images/cover.jpg);
+  }
+}

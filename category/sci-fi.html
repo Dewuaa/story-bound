@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScienceFiction</title>
+
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/sidebar.css">
+  <link rel="stylesheet" href="../styles/books.css">
+  <link rel="stylesheet" href="../styles/pagetrans.css">
+  <link rel="icon" type="image/png" href="../icons/LogoTitle.png"/>
+
+</head>
+
+<body>
+
+ 
+
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="../icons/hamburger-menu.svg"> 
+      <div class="dropdown">
+        <a target="_self" href="fantasy.html">Fantasy</a>
+        <a target="_self" href="drama.html">Drama</a>
+        <a target="_self" href="sci-fi.html">Sci-fi</a>
+        <a target="_self" href="horror.html">Horror</a>
+      </div>
+    </div>       
+  </nav>
+
+  <header class="header">
+    <div class="left-section">
+      <a class="sblogo-button" target="_parent" href="../index.html"></a>
+        <img class="sb-logo" src="../icons/logo.png">
+
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" id="find" placeholder="Search Book" onkeyup="search()">
+      <button class="search-button">
+        <img class="search-icon" src="../icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+          <a target="_blank" href="https://www.instagram.com/gabirru3/">
+            <img class="upload-icon" src="../icons/instagram.svg" />
+          </a>
+          <div class="tooltip">Instagram</div>
+      </div>
+      <div class="upload-icon-container">
+          <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXPWwSVSgHdkXpmRVWNsLNfvPLLzMlmXCKGfnKxBqzqPJNqLmQpFvfTSqrScgRNwHcvCR">
+              <img class="gmail-apps-icon" src="../icons/gmail.png" />
+          </a>
+          
+          <div class="tooltip">Email</div>
+      </div>
+
+      <div class="notifications-icon-container">
+          <a href="../index.html">
+              <img class="notifications-icon" src="../icons/home.svg" />
+          </a>
+          <div class="tooltip">Home</div>                    
+      </div>
+      <img class="current-user-picture" src="../icons/mypc.png" />
+  </div>
+  </header>
+
+  <section id="books" class="books">
+
+    <a href="../booksContent/sci1.html">
+      <div class="bookspreview">
+        <div class="thumbnail-row">
+          <img class="thumbnail-horror" src="../thumbnails/sci1.jpg">
+        </div>
+        <div class="books-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../icons/sb-logo.png">
+          </div>
+          <div class="books-info">
+            <h3 class="books-title">
+              The Lies of the Ajungo
+            </h3>
+            <h3 class="books-author">
+              by Moses Ose Utomi
+            </h3>
+            <h3 class="books-stats">
+              366 ratings • 169 reviews
+            </h3>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="../booksContent/sci2.html">
+      <div class="bookspreview">
+        <div class="thumbnail-row">
+          <img class="thumbnail-horror" src="../thumbnails/sci2.jpg">
+        </div>
+        <div class="books-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../icons/sb-logo.png">
+          </div>
+          <div class="books-info">
+            <h3 class="books-title">
+              Made of Stars
+            </h3>
+            <h3 class="books-author">
+              by Jenna Voris
+            </h3>
+            <h3 class="books-stats">
+              169 ratings • 89 reviews
+            </h3>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="../booksContent/sci3.html">
+      <div class="bookspreview">
+        <div class="thumbnail-row">
+          <img class="thumbnail-horror" src="../thumbnails/sci3.jpg">
+        </div>
+        <div class="books-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../icons/sb-logo.png">
+          </div>
+          <div class="books-info">
+            <h3 class="books-title">
+              Hospital
+            </h3>
+            <h3 class="books-author">
+              by Han Song
+            </h3>
+            <h3 class="books-stats">
+              285 ratings • 77 reviews
+            </h3>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+    <a href="../booksContent/sci4.html">
+      <div class="bookspreview">
+        <div class="thumbnail-row">
+          <img class="thumbnail-horror" src="../thumbnails/sci4.jpg">
+        </div>
+        <div class="books-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="../icons/sb-logo.png">
+          </div>
+          <div class="books-info">
+            <h3 class="books-title">
+              Antimatter Blues
+            </h3>
+            <h3 class="books-author">
+              by Edward Ashton
+            </h3>
+            <h3 class="books-stats">
+              819 ratings • 270 reviews
+            </h3>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+
+  </section>
+
+  <script src="../app.js"></script>
+</body>
+</html>
